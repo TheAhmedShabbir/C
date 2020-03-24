@@ -1,0 +1,36 @@
+
+//create an array
+void array(int size,int *a){
+    printf("Enter numbers: \n");
+    for(counter = 0; counter < size; ++counter) {
+        scanf("%d", &a[counter]);
+    }
+}
+
+//print an array
+void printArray(int size,int *a){
+    for(counter = 0; counter < size; ++counter) {
+        printf("%d,",a[counter]);
+    }
+    printf("\n");
+}
+
+//sum of an array
+void sumOfArray(int size,int *a){
+    int sum = 0;
+    for (counter = 0; counter < size; ++counter) {
+        sum += a[counter];
+    }
+    printf("%d\n",sum);
+}
+
+//find largest number in an array
+void largestNumber(int size, int *a){
+    int l = a[0];
+    for (counter = 0; counter < size; ++counter) {
+        if(l < a[counter]){
+            l = a[counter];
+        }
+    }
+    printf("%d\n",l);
+}
