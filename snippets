@@ -1,5 +1,5 @@
+//    CREATE AN ARRAY
 
-//create an array
 void array(int size,int *a){
     printf("Enter numbers: \n");
     for(counter = 0; counter < size; ++counter) {
@@ -7,7 +7,8 @@ void array(int size,int *a){
     }
 }
 
-//print an array
+//    PRINT AN ARRAY 
+
 void printArray(int size,int *a){
     for(counter = 0; counter < size; ++counter) {
         printf("%d,",a[counter]);
@@ -15,7 +16,8 @@ void printArray(int size,int *a){
     printf("\n");
 }
 
-//sum of an array
+//  FIND SUM OF AN ARRAY
+
 void sumOfArray(int size,int *a){
     int sum = 0;
     for (counter = 0; counter < size; ++counter) {
@@ -24,7 +26,8 @@ void sumOfArray(int size,int *a){
     printf("%d\n",sum);
 }
 
-//find largest number in an array
+//   FIND LARGEST NUMBER IN AN ARRAY
+
 void largestNumber(int size, int *a){
     int l = a[0];
     for (counter = 0; counter < size; ++counter) {
